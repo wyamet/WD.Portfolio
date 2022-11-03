@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 :root {
@@ -13,6 +14,7 @@
 
 
 body {
+  flex-wrap: wrap;
   margin: 0;
   background: #222;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -116,6 +118,7 @@ nav a:hover::before {
 
 .container { 
   display: flex;
+  
   justify-content: bottom ;
   height: 500px;
   padding: 0 20px;
@@ -124,6 +127,7 @@ nav a:hover::before {
 }
 .collumn {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
@@ -135,10 +139,19 @@ nav a:hover::before {
 .collumn p {
   font-size: 14px;
   color: var(--tan);
-  justify-self: center;
+  justify-content: space-between;
+  padding: 1%;
 }
+
+.bio {
+float: inline-end;
+color: var(--tan);
+text-decoration: none;
+}
+
 .card {
   display: flex;
+  flex-wrap: wrap;
   border-style: solid;
   border-width: 1px;
   padding: 0px;
@@ -157,7 +170,15 @@ nav a:hover::before {
 
 .card:hover {
   box-shadow: 10px 10px 10px 10px rgba(0,0,1);
+  transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transition: 250ms;
+
 }
+
+
 
 .card header {
   padding: 20px;
@@ -193,4 +214,13 @@ footer {
   justify-content: center;
   padding: 20px;
   margin: 1;
+  background-color: var(--tan);
+  text-decoration: none;
+
+}
+
+@media screen and (min-width: 400px) {
+  header {
+    width: 100%;
+  }
 }
