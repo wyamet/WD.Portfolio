@@ -4,102 +4,313 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" Href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href=assets/css/styles.css>
+    <link rel="scripts" href=assets/Script/script.js>
+
+
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="nav_container">
-            <h1 class="title">wyatt domanski</h1>
-            <Nav>
-                <Ul class="nav_links">
-                  <li><a href="#About me">About me</a></li>
-                  <li><a href="#Projects">Projects</a></li>
-                  <li><a href="#Work History">Work</a></li>
-                  <li><a href="#Education">Education</a></li>
-                  <li><a class="Contact" href="#"><button>contact</button></a</li>
-                </Ul>
-            </Nav>
-        </div>
-            
-    </header>
-<main>
-    <div class="container">
-        <div class="collumn">
-            <h1 id="About me">About me</h1>
-            
-            <div>
-             <img src="https://picsum.photos/400" alt="place holder random">
-             <img src="https://picsum.photos/400" alt="place holder random">
-            </div>
-            <p class="Bio">I am a growing Web dev student currently enrolled in a coding bootcamp through the Univerisity of Oregon.</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="collumn">
-         <h1 id="Projects">Projects</h1> 
-         <br>
-         <p>These are some of the Projects I have made.</p>
-         </div>
-         <section class="card">
-            <header>Project 1</header>
-            
-            <p>I will place my first project.</p>
-          </section>
-          <section class="card">
-            <header>Project 2</header>
-            
-            <p>second project goes here.</p>
-          </section>
-          <section class="card">
-            <header>Project 3</header>
-            
-        
-            <p>My third project goes here</p>
-          </section>
-          <section class="card">
-            <header>Final project</header>
-            
-            <p>My final project goes here.</p>
-          </section>
-        </div>
-        </div>
-        </div>
-        </div>
 
-        <div class="container">
-            <div class="collumn">
-    <section class="work history">
-        <h2 id="Work History">Work History</h2>
-        <p>work exp</p> <br/>
-        <p>work exp</p><br/>
-        <p>work exp</p><br/>
-    </section>
-    </div>
-    </div>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">School</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Work</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
 
-    <div class="container">
-        <div class="collumn">
-<section class="Education">
-    <h2 id="Education">Education</h2>
-    <p>High school diploma</p> <br/>
-    <p>Lane Comunity college</p><br/>
-    <p>Enrolled University of Oregon coding bootcamp</p><br/>
+ <!-- main banner -->
+ <section class="bgimage" id="home">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Wyatt</h2>
+          <p class="hero_desc">I am web dev student</p>
+      </div>
+      </div>
+  </div>
 </section>
-</div>
-</div>
+
+<!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Wyatt Domanski</li>
+                                <li>Age: 28</li>
+                                <li>Fullstack Web Student</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Live in Eugene, Oregon</li>
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+      <div class="container">
+          <h1 class="text-center">Services</h1>
+          <div class="row">
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class="fas servicesIcon fa-clock"></i>
+                          <h4 class="card-title mt-3">Website Development</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class='fas servicesIcon fa-layer-group'></i>
+                          <h4 class="card-title mt-3">Website Design</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class='far servicesIcon fa-check-circle'></i>
+                          <h4 class="card-title mt-3">Website Deployment</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class='fas servicesIcon fa-search'></i>
+                          <h4 class="card-title mt-3">SEO</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class='fas servicesIcon fa-shield-alt'></i>
+                          <h4 class="card-title mt-3">DevOps</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+
+              <div class="col-lg-4 mt-4">
+                  <div class="card servicesText">
+                      <div class="card-body">
+                          <i class='fas servicesIcon fa-wrench'></i>
+                          <h4 class="card-title mt-3">QA</h4>
+                          <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                              Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                      </div>
+                  </div>  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- portfolio section-->
+  <section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/photos/Screenshot 2022-12-18 at 4.15.45 PM.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Mobies2Watch</h4>
+                        <p class="card-text">First Project. An application that allows the use to search for a movie, where then the user is presented with a trailer and discription of the movie. The user then can add and remove movies to there watch list. This application uses javaScript, css, html and 3rd party API's to work.</p>
+                        <div class="text-center">
+                            <a href="https://wyamet.github.io/Movies2Watch/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Quiz App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Landing Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Messaging Service</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Twitter Clone</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Blog App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
     
- </main>
 
- <footer class="footer">
-    <h3>Thanks For Visiting</h3>
-</footer>
+     
 
 
 
-   
-    
 
-</body>
+
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        </body>
 </html>
